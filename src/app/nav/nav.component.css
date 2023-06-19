@@ -1,0 +1,63 @@
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li{
+    padding: 5px 25px;
+}
+
+ul li {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: default;
+}
+
+ul li::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    transition: all 0.5s;
+}
+
+ul li:hover::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+
+ul li:hover::after{
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+@media only screen and (max-width: 450px) {
+    ul li{
+        padding: 2px 10px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border-radius: 30%;
+    color: #3a3939;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.icon i{
+    line-height: 200px;
+    font-size: 4rem;
+    transition: all 0.5s;
+}
+
+.icon:hover i{
+    color: whitesmoke;
+    animation: icons 0.7s 1 forwards;
+}
+
+.icon::before{
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: -110%;
+    top: 90%;
+    background-color:#3a3939;
+    transform: rotate(45deg);
+}
+
+.icon:hover::before{
+    animation: animation 0.7s 1 forwards;
+}
+
+@keyframes animation{
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 15%;
+        top: -10%;
+    }
+
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
+@keyframes icons{
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+
+    45% {
+        transform: rotate(15deg) scale(2);
+    }
+
+    70% {
+        transform: rotate(-15deg) scale(2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(2);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon i{
+        line-height: 100px;
+        font-size: 2rem;
+    }
+
+    .container{
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+}

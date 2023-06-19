@@ -1,0 +1,105 @@
+*{
+    font-family: 'poppins',sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    width: 64vh;
+    margin-left: 20px;
+}
+
+.section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 60vh;
+    height: 30vh;
+    margin: 20px;
+    background-color:#fff;
+    border: 1.5px solid black;
+    box-shadow: -5px 5px #0000002c;
+    overflow: hidden;
+}
+
+.section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.section:hover::before{
+    transform: translateX(0);
+}
+
+.section div{
+    margin-left: 15px;    
+}
+
+.section div::before{
+    content: '';
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    color: #dcedf7;
+}
+
+.section:hover div::before{
+    opacity: 1;
+    transition-delay: 0.3s;
+    white-space: pre;
+    color: #dcedf7;
+}
+
+.section .datatype:hover::before{
+    content: "var a = 10 + 7 \A Where 'var' is Keyword \A 'a' is a variable \A '+' is the Operator\A NOTE: 'var','let','const' are all valid keywords\a to declare a variable";
+}
+
+.section .objects:hover::before{
+    content: "var color = { \a name: 'Teal', \a pigment: B7 \a}\aWhere 'name' and 'pigment' are Keys\a'Teal' and 'B7' are values";
+}
+
+.section .function:hover::before{
+    content: "function name(param1,param2){\avar a = param1 + param2;\areturn a;\a }\a\aname(17,6)";
+}
+
+.section .scope:hover::before{
+    content: "Global: The outer most scope.\a Functional: Any variables inside a function\a is in scope of the function.\aLexical: The physical location where a\a variable or function is declared is its\a lexical environment.";
+}
+
+.section .operators:hover::before{
+    content: "\aLogical: ||,&& \a Equality: ==,===\a Relational: >=,<=,!=,!==\a Increment: ++\a Decrement: --";
+}
+
+.section .coercion:hover::before{
+    content: "Type coercion priority order:\a 1. String\a 2. Number\a 3. Boolean\a\a 2 + '7';      // '27' \atrue - 5  // -4 ";
+}
+
+.section .conditional:hover::before{
+    content: "if-else Statement: if(condition){... }\a else-if(condition){... }\a\aSwitch Statement: switch(expression){\a case choice1:\a ...\a break;} ";
+}
+
+.section .loops:hover::before{
+    content: "For loop:\a for(intialization;condition;2nd-expression){..}\aWhile loop:\a while(condition){...}\a Do while loop:\a do{\a...} while(condition); ";
+}
+

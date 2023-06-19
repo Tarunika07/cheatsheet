@@ -1,0 +1,167 @@
+<app-nav></app-nav>
+<div class="container">
+
+<div class="section">
+<div>
+<h3>Color Values</h3>
+<ul>
+    <li (click)="color('Midnightblue')">Color name</li>
+    <li (click)="color('rgb(187, 159, 187)')">RGB value</li>
+    <li (click)="color('#808000')">Hex code</li>
+    <li (click)="color('hsl(339, 23%, 70%)')">HSL value</li>
+    <li (click)="color('hwb(49 56% 2%)')">HWB value</li>
+</ul>
+<h3>Opacity</h3>
+<ul>
+    <li (click)="color('rgba(0, 0, 0, 0.7)')">0.7</li>
+    <li (click)="color('rgba(0, 0, 0, 0.5)')">0.5</li>
+    <li (click)="color('rgba(0, 0, 0, 0.3)')">0.3</li>
+</ul>
+</div>
+<iframe #colorpreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Text Align</h3>
+<ul>
+    <li (click)="text('left','')">Left</li>
+    <li (click)="text('right','')">Right</li>
+    <li (click)="text('center','')">Center</li>
+    <li (click)="text('justify','')">Justify</li>
+</ul>
+<h3>Text Transform</h3>
+<ul>
+    <li (click)="text('','uppercase')">Upper case</li>
+    <li (click)="text('','lowercase')">Lower case</li>
+    <li (click)="text('','capitalize')">Capitalize</li>
+</ul>
+</div>
+<iframe #textpreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Font size</h3>
+<ul>
+    <li (click)="font('large','')">Large</li>
+    <li (click)="font('larger','')">Larger</li>
+    <li (click)="font('x-large','')">X-Large</li>
+    <li (click)="font('small','')">Small</li>
+    <li (click)="font('x-small','')">X-Small</li>
+    <li (click)="font('xx-small','')">XX-Small</li>
+    <li (click)="font('medium','')">Medium</li>
+</ul>
+<h3>Font-weight</h3>
+<ul>
+    <li (click)="font('','bold')">Bold</li>
+    <li (click)="font('','bolder')">Bolder</li>
+    <li (click)="font('','lighter')">Lighter</li>
+    <li (click)="font('','100')">100</li>
+    <li (click)="font('','400')">400</li>
+</ul>
+</div>
+<iframe #fontpreview class="iframe"></iframe>
+</div> 
+
+<div class="section">
+<div>
+<h3>Line height</h3>
+<ul>
+    <li (click)="line('1','')">1</li>
+    <li (click)="line('2','')">2</li>
+    <li (click)="line('3','')">3</li>
+    <li (click)="line('5px','')">5px</li>
+    <li (click)="line('170%','')">170%</li>
+</ul>
+<h3>Letter spacing</h3>
+<ul>
+    <li (click)="line('','1px')">1px</li>
+    <li (click)="line('','3px')">3px</li>
+    <li (click)="line('','30px')">20px</li>
+    <li (click)="line('','-2px')">-2px</li>
+    <li (click)="line('','-5px')">-5px</li>
+</ul>
+</div>
+<iframe #linepreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Border radius</h3>
+<ul>
+    <li (click)="radius('10%')">10%</li>
+    <li (click)="radius('20%')">20%</li>
+    <li (click)="radius('30%')">30%</li>
+    <li (click)="radius('40%')">40%</li>
+    <li (click)="radius('50%')">50%</li>
+    <li (click)="radius('30% 30% 0% 0%')">Top corners curved</li>
+    <li (click)="radius('0% 0% 30% 30%')">Bottom corners curved</li>
+</ul>
+</div>
+<iframe #radiuspreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Margin</h3>
+<ul>
+    <li (click)="margin('10px')">10px</li>
+    <li (click)="margin('25px')">25px</li>
+    <li (click)="margin('100px')">100px</li>
+    <li (click)="margin('10%')">10%</li>
+    <li (click)="margin('20px 5px')">20px 5px</li>
+    <li (click)="margin('10px 5px 7px 13px')">10px 5px 7px 13px</li>
+    <li (click)="margin('none')">none</li>
+</ul>
+</div>
+<iframe #marginpreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Padding</h3>
+<ul>
+    <li (click)="padding('10px')">10px</li>
+    <li (click)="padding('25px')">25px</li>
+    <li (click)="padding('100px')">100px</li>
+    <li (click)="padding('10%')">10%</li>
+    <li (click)="padding('20px 5px')">20px 5px</li>
+    <li (click)="padding('10px 5px 7px 13px')">10px 5px 7px 13px</li>
+    <li (click)="padding('none')">none</li>
+</ul>
+</div>
+<iframe #paddingpreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Border Style</h3>
+<ul>
+    <li (click)="border('dotted')">Dotted</li>
+    <li (click)="border('dashed')">Dashed</li>
+    <li (click)="border('ridge')">Ridge</li>
+    <li (click)="border('groove')">Groove</li>
+    <li (click)="border('double')">Double</li>
+</ul>
+</div>
+<iframe #borderpreview class="iframe"></iframe>
+</div>
+
+<div class="section">
+<div>
+<h3>Transforms</h3>
+<ul>
+    <li (click)="transform('translateX(70px)','TranslateX')">TranslateX</li>
+    <li (click)="transform('translateY(50px)','TranslateY')">TranslateY</li>
+    <li (click)="transform('scale(2)','Scale')">Scale Bigger</li>
+    <li (click)="transform('scale(0.5)','Scale')">Scale Smaller</li>
+    <li (click)="transform('rotate(75deg)','Rotate')">Rotate Anticlockwise</li>
+    <li (click)="transform('rotate(-75deg)','Rotate')">Rotate Clockwise</li>
+    <li (click)="transform('skew(20deg)','Skew')">Skew</li>
+</ul>
+</div>
+<iframe #transformpreview class="iframe"></iframe>
+</div>
+
+</div>

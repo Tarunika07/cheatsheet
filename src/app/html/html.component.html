@@ -1,0 +1,121 @@
+<app-nav></app-nav>
+   
+<div class="container">
+ 
+<div class="section">
+ <div>
+ <h3>Header Tag</h3>
+ <ul>
+     <li (click)="header('h1')">h1</li>
+     <li (click)="header('h2')">h2</li>
+     <li (click)="header('h3')">h3</li>
+     <li (click)="header('h4')">h4</li>
+     <li (click)="header('h5')">h5</li>
+     <li (click)="header('h6')">h6</li>
+ </ul>
+ </div>
+ <iframe #headerpreview class="iframe"></iframe>
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Break Tag</h3>
+ <ul>
+     <li (click)="break('')">Without break</li>
+     <li (click)="break('br')">With break</li>
+ </ul>
+ </div>
+ <iframe #breakpreview class="iframe"></iframe>
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>List Tag</h3>
+ <ul>
+     <li (click)="list('ol')">ordered list</li>
+     <li (click)="list('ul')">unordered list</li>
+ </ul>
+ </div>
+ <iframe #listpreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Text formatting</h3>
+ <ul>
+     <li (click)="text('b')">Bold</li>
+     <li (click)="text('i')">Italics</li>
+     <li (click)="text('u')">Underline</li>
+     <li (click)="text('mark')">Marked text</li>
+     <li (click)="text('small')">Smaller text</li>
+     <li (click)="text('del')">Deleted text</li>
+     <li (click)="text('ins')">Inserted text</li>
+     <li (click)="text('sub')">Subscript</li>
+     <li (click)="text('sup')">Superscript</li>
+ </ul>
+ </div>
+ <iframe #textpreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Table</h3>
+ <ul>
+     <li (click)="table('th')">Header</li>
+     <li (click)="table('td')">Row</li>
+ </ul>
+ </div>
+ <iframe #tablepreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Colspan & Rowspan</h3>
+ <ul>
+     <li (click)="col('cs')">Colspan</li>
+     <li (click)="col('rs')">Rowspan</li>
+ </ul>
+ </div>
+ <iframe #colpreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Block & Inline</h3>
+ <ul>
+     <li (click)="block('b')">Block elements</li>
+     <li (click)="block('i')">Inline elements</li>
+ </ul>
+ </div>
+ <iframe #blockpreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Entities</h3>
+ <ul>
+     <li (click)="ent('&#60;','Less than','#60')">Less than</li>
+     <li (click)="ent('&#61;','Equal to','#61')">Equal to</li>
+     <li (click)="ent('&#169;','Copyright','#169')">Copyright</li>
+     <li (click)="ent('&#174;','Registered trademark','#174')">Registered trademark</li>
+     <li (click)="ent('&#190;','Fraction 3/4','#190')">Fraction 3/4</li>
+     <li (click)="ent('&#8734;','Infinity','#8734')">Infinity</li>
+     <li (click)="ent('&#8721;','Sum','#8721')">Sum</li>            
+ </ul>
+ </div>
+ <iframe #entpreview class="iframe"></iframe> 
+ </div>
+
+ <div class="section">
+ <div>
+ <h3>Emojis</h3>
+ <ul>
+     <li (click)="emoji('1')">Grinning face </li>
+     <li (click)="emoji('2')">Crying Face</li>
+     <li (click)="emoji('3')">Sleeping face</li>
+     </ul>
+ </div>
+ <iframe #emojipreview class="iframe"></iframe> 
+ </div>
+ 
+</div>

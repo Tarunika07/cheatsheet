@@ -1,0 +1,14 @@
+.container{
+    font-family: "poppins";
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+    .container{
+        margin-left: 30px;
+    }
+}
